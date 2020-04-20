@@ -1,0 +1,21 @@
+<div [ngClass]="{'header':true, 'header-big':!isShrunk, 'header-small':isShrunk}">
+  <div class="header-item">
+    <mat-icon class="header-icon" fontSet="fas" fontIcon="fa-home"></mat-icon>
+  </div>
+    <div class="header-item">
+      <a *ngIf="!isShrunk">Projects</a>
+      <mat-icon *ngIf="isShrunk" class="header-icon" fontSet="fas" fontIcon="fa-file-code"></mat-icon>
+    </div>
+    <div class="header-item">
+      <a *ngIf="!isShrunk">Skills</a>
+      <mat-icon *ngIf="isShrunk" class="header-icon" fontSet="fas" fontIcon="fa-star-half-alt"></mat-icon>
+    </div>
+    <div class="header-item">
+      <a *ngIf="!isShrunk">About</a>
+      <mat-icon *ngIf="isShrunk" class="header-icon" fontSet="fas" fontIcon="fa-portrait"></mat-icon>
+    </div>
+    <div class="header-item">
+      <a *ngIf="!isShrunk">Contact</a>
+      <mat-icon *ngIf="isShrunk" class="header-icon" fontSet="fas" fontIcon="fa-envelope-open"></mat-icon>
+    </div>
+  </div>
